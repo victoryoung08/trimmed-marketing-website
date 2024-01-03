@@ -18,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${font.className} bg-black text-white`}>
+      <body className={`${font.className} bg-black text-white px-12 py-48`}>
         <Providers>
           <Navbar />
           {children}

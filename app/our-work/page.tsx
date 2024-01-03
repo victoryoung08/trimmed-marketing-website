@@ -1,4 +1,25 @@
 import Image from "next/image";
+import CaseStudyCard from "@/components/CaseStudyCard/CaseStudyCard";
+
+const CaseStudies = () => {
+  const caseStudyData = [
+    {
+      name: "Mancave Barbershop Australia",
+      tags: ["Content", "Paid Ads", "Create & Convert"],
+      imgSrc: "",
+      description:
+        "How we've helped Mancave Barbershop grow and open 4 more stores while reaching millions of people every month with Instagram, Tiktok, Youtube and Google SEO",
+    },
+    {
+      name: "Strong Living EP",
+      tags: ["Social Media Strategy", "Create Content"],
+      imgSrc: "",
+      description:
+        "How we helped build a stronger authority and social media presence for an Exercise Physiology business",
+    },
+  ];
+  return caseStudyData.map((cs) => <CaseStudyCard key={cs.name} data={cs} />);
+};
 
 export default function page() {
   return (
@@ -10,15 +31,7 @@ export default function page() {
         </h1>
       </section>
       <section>
-        <div className="flex gap-2">
-          <span>Content</span>
-          <span>Paid Ads</span>
-          <span>Create & Convert</span>
-        </div>
-        <h2>Mancave Barbershop Australia</h2>
-        <div>
-          <img src="" alt="" className="bg-white w-full h-[400px]" />
-        </div>
+        <CaseStudies />
       </section>
     </main>
   );

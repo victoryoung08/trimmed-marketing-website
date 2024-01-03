@@ -51,7 +51,7 @@ h2 {
 }
 
 .nav-btn {
-  @apply p-4 bg-slate-800 rounded-xl text-center;
+  @apply p-4 bg-slate-800 rounded-xl text-center text-nowrap;
 }
 
 .primary {
