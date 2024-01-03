@@ -20,7 +20,7 @@ export default async function Home() {
         <div className="flex flex-col items-center gap-4">
           <CTAButton cta="/">Explore Packages</CTAButton>
           <Link href="/contact" className="text-link">
-            Book a call
+            Book a calln
           </Link>
         </div>
       </header>
