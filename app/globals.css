@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  @apply text-white;
+}
+
+h1 {
+  @apply text-[48px] font-normal tracking-tight;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+.section-pd-sm {
+  @apply py-4 px-4;
+}
+
+.section-pd-md {
+  @apply py-12 px-12;
+}
+
+.section-pd-lg {
+  @apply py-20 px-20;
+}
+
+.btn {
+  @apply w-full bg-primary text-textDark py-4 px-4 rounded-xl font-semibold text-xl tracking-tight;
+}
+
+.text-link {
+  @apply font-light text-textGray;
+}
+
+.grid-cell {
+  @apply rounded-xl flex items-center justify-center h-full;
+}
+
+.dark-gradient {
+  background: linear-gradient(
+    160.6deg,
+    rgba(0, 0, 0, 0.93) 11.2%,
+    rgb(39, 38, 38) 78.9%
+  );
+}
+
+.nav-btn {
+  @apply p-4 bg-slate-800 rounded-xl text-center;
+}
+
+.primary {
+  @apply text-textDark font-medium;
+  background: linear-gradient(90deg, rgb(69, 239, 229), rgb(168, 221, 18));
+}
+
+.secondary {
+  @apply bg-gray-800 text-white stroke-white stroke-1 font-medium;
+}

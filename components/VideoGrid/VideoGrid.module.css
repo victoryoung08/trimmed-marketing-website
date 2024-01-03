@@ -1,0 +1,3 @@
+.gridCell {
+  @apply h-full w-auto rounded-md overflow-hidden;
+}

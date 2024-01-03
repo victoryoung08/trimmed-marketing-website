@@ -1,0 +1,15 @@
+.packages {
+  @apply grid grid-rows-4;
+  border: 1px solid white;
+  border-radius: 24px;
+  padding: 24px;
+  text-align: center;
+  margin: 24px auto;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.packages span {
+  font-size: 20px;
+  font-weight: 700;
+}
