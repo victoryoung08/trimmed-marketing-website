@@ -33,7 +33,7 @@ export default function Navbar() {
     </Link>
   ));
   return (
-    <nav className="bg-[hsl(180,5%,8%)] p-2 rounded-xl fixed bottom-[60px] right-[50%] translate-x-[50%] w-[80%] ">
+    <nav className="bg-[hsl(180,5%,8%)] p-2 rounded-xl fixed bottom-[60px] right-[50%] translate-x-[50%] w-[80%] z-10 ">
       <div className="mx-auto grid grid-cols-4 justify-center gap-2 w-full">
         {linkBlock}
       </div>
