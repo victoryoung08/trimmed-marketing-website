@@ -9,6 +9,7 @@ import {
   Button,
   useDisclosure,
 } from "@nextui-org/react";
+import Image from "next/image";
 
 export default function App({ video }) {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
@@ -21,12 +22,14 @@ export default function App({ video }) {
     <div className="w-full">
       <Button
         onPress={() => handleOpen("blur")}
-        className="flex flex-col w-fit h-full mx-auto"
+        className="flex flex-col w-full h-fit mx-auto p-0"
       >
-        <img
+        <Image
           src={video.pictures.base_link}
           alt=""
-          className="overflow-hidden object-cover object-top-[25%]"
+          width={300}
+          height={200}
+          className="w-full object-cover object-bottom"
         />
         {/* <span className="absolute -translate-x-[50%] -translate-y-[50%] top-1/2 left-1/2 ">
           {video.name}

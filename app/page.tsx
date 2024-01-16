@@ -1,34 +1,39 @@
 import Link from "next/link";
 
-import Features from "@/components/Features";
+import Features from "@/components/Features/Features";
 import Packages from "@/components/Packages/Packages";
 import VideoGrid from "@/components/VideoGrid/VideoGrid";
 import CTAButton from "@/components/ui/CTAButton/CTAButton";
+import LeadForm from "@/components/ui/LeadForm/LeadForm";
+
+// actions
+import { getSubscribers } from "@/app/actions/mailerlite";
 
 export default async function Home() {
   return (
     <main className="pb-36">
-      <header className="h-fit py-24 px-8 flex flex-col gap-16 justify-around mx-auto md:max-w-[600px]">
-        {/* Header */}
-        <h1 className="text-center">
+      <header className="h-fit py-24 px-8 flex flex-col gap-8 mx-auto md:max-w-[600px]">
+        <h1 className="text-center font-bold">
           Find more customers <br /> you{" "}
           <span className="text-primary">love</span> to work with
         </h1>
-        {/* Grid */}
-        <VideoGrid />
-        {/* Button Block */}
+        <div className="text-center">
+          <p>Be the first when they Google you</p>
+          <p>Build a community of customers on social media</p>
+          <p>Create a website that generates and converts leads</p>
+        </div>
         <div className="flex flex-col items-center gap-4">
-          <CTAButton cta="/">Explore Packages</CTAButton>
+          <CTAButton>Explore Packages</CTAButton>
           <Link href="/contact" className="text-link">
-            Book a calln
+            Book a call
           </Link>
         </div>
       </header>
-      {/* Logos */}
       <section>
         <div className="bg-textDark h-20"></div>
       </section>
       <Features />
+      <VideoGrid />
       <section className="my-1npm">
         <div className="text-center">
           <h2>
@@ -46,6 +51,7 @@ export default async function Home() {
         </div>
       </section>
       <Packages />
+      <LeadForm />
     </main>
   );
 }

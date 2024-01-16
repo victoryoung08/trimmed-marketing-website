@@ -1,4 +1,4 @@
 .ctaButton {
   background-image: linear-gradient(to right, #45efe5, #a8dd12);
-  @apply w-full h-fit p-4 rounded-xl text-textDark font-medium mx-auto whitespace-nowrap;
+  @apply w-fit h-fit p-4 rounded-xl text-textDark font-medium mx-auto whitespace-nowrap;
 }

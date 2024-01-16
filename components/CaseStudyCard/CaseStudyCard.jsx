@@ -4,9 +4,7 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 import { getAssetDetails } from "@/utils/contentful";
 export default async function CaseStudyCard({ data }) {
   const heroImageId = data.fields.heroImage.sys.id;
-  const heroImageDetails = await getAssetDetails(heroImageId);
-  const heroImageURL = "https:" + heroImageDetails.fields.file.url;
-  const heroImageDescription = heroImageDetails.fields.description;
+  const heroImage = await getAssetDetails(heroImageId);
   return (
     <div className="mb-24 flex flex-col gap-4">
       <div className="flex flex-col gap-2">
@@ -19,17 +17,20 @@ export default async function CaseStudyCard({ data }) {
       </div>
       <div className="rounded-xl overflow-hidden">
         <Image
-          src={heroImageURL}
+          src={heroImage}
           width={3000}
           height={2000}
           style={{ objectFit: "cover" }}
+          alt={data.fields.name}
           className="bg-white w-full aspect-[3/2]"
         />
       </div>
       <p>{data.description}</p>
       <div>
         <Link
-          href={`/our-work/${data.fields.slug}`}
+          href={{
+            pathname: `/our-work/${data.fields.slug}`,
+          }}
           className="flex flex-row w-full items-center"
         >
           <p>Read Case Study</p>
