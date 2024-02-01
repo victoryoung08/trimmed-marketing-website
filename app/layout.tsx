@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${font.className} bg-black text-white px-12 py-48 md:max-w-92`}
+        className={`${font.className} bg-black text-white  md:max-w-92`}
       >
         <Providers>
           <Navbar />

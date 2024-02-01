@@ -8,18 +8,21 @@ export default function Navbar() {
       href: "/",
       colSpan: "",
       style: "secondary",
+      scroll: true,
     },
     {
       text: "Our Work",
       href: "/our-work",
       colSpan: "",
       style: "secondary",
+      scroll: true,
     },
     {
       text: "Get Started",
-      href: "/get-started",
+      href: "#packages",
       colSpan: "col-span-2",
       style: "primary",
+      scroll: false,
     },
   ];
 
@@ -28,6 +31,7 @@ export default function Navbar() {
       className={`nav-btn ${link.style} ${link.colSpan}`}
       href={link.href}
       key={link.text}
+      scroll={link.scroll}
     >
       {link.text}
     </Link>

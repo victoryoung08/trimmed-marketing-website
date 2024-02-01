@@ -35,12 +35,14 @@ export const createEmailLead = async (formData) => {
   const name = formData.get("name");
   const email = formData.get("email");
   const phone = formData.get("phone");
+  const packages = formData.get("package");
 
   const bodyData = {
     email: email,
     fields: {
       name: name,
       phone: phone,
+      package: packages,
     },
     groups: ["109919835523122972"],
   };

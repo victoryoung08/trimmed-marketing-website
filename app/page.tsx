@@ -5,51 +5,41 @@ import Packages from "@/components/Packages/Packages";
 import VideoGrid from "@/components/VideoGrid/VideoGrid";
 import CTAButton from "@/components/ui/CTAButton/CTAButton";
 import LeadForm from "@/components/ui/LeadForm/LeadForm";
+import Logos from "@/components/Logos/Logos";
+import HandDrawnCircle from "@/components/HandDrawnCircle/HandDrawnCircle";
+import SubCTA from "@/components/SubCTA/SubCTA";
+import { Card, CardHeader, CardBody, CardFooter } from "@nextui-org/react";
+import FeatureRow from "@/components/FeatureRow/FeatureRow";
 
 // actions
-import { getSubscribers } from "@/app/actions/mailerlite";
 
 export default async function Home() {
   return (
     <main className="pb-36">
-      <header className="h-fit py-24 px-8 flex flex-col gap-8 mx-auto md:max-w-[600px]">
-        <h1 className="text-center font-bold">
-          Find more customers <br /> you{" "}
+      <header
+        className="h-fit
+       px-1 flex flex-col gap-8 mx-auto sm:text-center"
+      >
+        <h1 className="font-bold">
+          Get more customers <br /> you{" "}
           <span className="text-primary">love</span> to work with
         </h1>
-        <div className="text-center">
-          <p>Be the first when they Google you</p>
-          <p>Build a community of customers on social media</p>
-          <p>Create a website that generates and converts leads</p>
-        </div>
-        <div className="flex flex-col items-center gap-4">
-          <CTAButton>Explore Packages</CTAButton>
-          <Link href="/contact" className="text-link">
-            Book a call
-          </Link>
-        </div>
-      </header>
-      <section>
-        <div className="bg-textDark h-20"></div>
-      </section>
-      <Features />
-      <VideoGrid />
-      <section className="my-1npm">
-        <div className="text-center">
-          <h2>
-            Customers who <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#45EFE5] to-primary">
-              tell their friends about you
-            </span>
-            <br />
-            <span>❤️‍🔥</span>
-          </h2>
+        <div>
           <p>
-            We build likeable & relatable brands <br />
-            customers can&apos;t help but share
+            Build and convert your following into customers who pay your prices
+            and choose you over your competition.
           </p>
         </div>
-      </section>
+        <div className="flex flex-col items-center gap-4">
+          <CTAButton>Book a call</CTAButton>
+        </div>
+      </header>
+      <Logos />
+      <Features />
+      <VideoGrid />
+      <FeatureRow />
+      {/* <SubCTA /> */}
+
       <Packages />
       <LeadForm />
     </main>

@@ -1,3 +1,4 @@
+import { access } from "fs";
 import { revalidatePath } from "next/cache";
 
 const contentful = require("contentful");
@@ -73,3 +74,20 @@ export const getCaseStudyPageData = async (query, value) => {
     console.log(error);
   }
 };
+
+// export const getLogos = async (query) => {
+//   try {
+//     console.log("query:", query);
+//     const res = await fetch(
+//       `${base_url}/spaces/${space}/environments/master/entries?access_token=${accessToken}&metadata.tags.sys.id[all]=${query}`
+//       // `${base_url}/spaces/${space}/environments/${environment}/tags`,
+//       // {
+//       //   headers: { Authorization: `Bearer ${accessToken}` },
+//       // }
+//     );
+//     const data = await res.json();
+//     return data.items;
+//   } catch (err) {
+//     console.error("An error with fetching logos");
+//   }
+// };

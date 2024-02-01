@@ -19,6 +19,8 @@ const config: Config = {
         primary: "rgb(168, 221, 18)",
         textDark: "#000000",
         textGray: "#8C929E",
+        secondary: "#45efe5",
+        // gradientPrimary: "linear-gradient(to right, #45efe5, #a8dd12)",
       },
     },
   },

@@ -1,43 +1,38 @@
-"use client";
 import styles from "./Features.module.css";
-import Image from "next/image";
-import { Splide, SplideSlide } from "@splidejs/react-splide";
-import "@splidejs/react-splide/css";
+import IconCubes from "@/components/ui/IconCubes";
 
 export default function Features() {
   const features = [
     {
       id: 1,
-      title: "Social Media Content",
+      tag: "Social Media Marketing",
+      title: "Reach new audiences and turn followers into customers",
       content:
-        "We'll film, produce and edit your social media content, meaning less of your time spent in the Reels Editing app and more time on your business",
+        "We'll create content to show customers you're business is the right solution for them. Our goal is to get you the right customers who fit your values, prices and genuinely want your services - without the need for discounts",
       imgSrc: "",
     },
     {
       id: 2,
-      title: "Website Development",
+      tag: "Web Development",
+      title: "Build a website that converts",
       content:
-        "Build a website that not only looks great but converts great. We'll handle the technical stuff and do all the photography and videography required for your website.",
+        "Funnel your social media followers to your website that does the heavy lifting at qualifying your customers. We want you to work with more customers you love.",
       imgSrc: "",
     },
     {
       id: 3,
-      title: "SEO & Google My Business",
+      tag: "SEO",
+      title: "Rank higher on Google and Maps",
       content:
-        "We'll create and implement an SEO strategy to help your business be more visible to customers. This means ranking higher on search terms and Google Maps.",
+        "Be at the top of your customers search and Google Maps. We'll help you appear higher and higher.",
       imgSrc: "",
     },
     {
       id: 4,
-      title: "Social Media Strategy & Management",
+      tag: "Video Podcasts",
+      title: "Build a close community with podcasts",
       content:
-        "We'll create the strategy which aligns with your business and your customers wants and needs. We'll come up with all content ideas and manage your community so you can focus on serving customers",
-      imgSrc: "",
-    },
-    {
-      id: 5,
-      title: "Video Podcasts",
-      content: "Elevate your brand with video podcasts",
+        "Streamline your content creation with a format more and more customers love.",
     },
   ];
 
@@ -54,39 +49,37 @@ export default function Features() {
   // ));
 
   return (
-    <section className="px-6 py-12 lg:px-48">
-      <div className="flex flex-col lg:flex-row">
+    <section className="global-padding">
+      <div className="flex flex-col">
         <div className="text-center my-12 mx-auto w-full">
           <h2 className="text-3xl">
-            Your Plug-in
-            <br /> Digital Marketing Team <br /> to reach more customers
+            Build a brand on social and convert followers into leads
           </h2>
+          <p>
+            We create social media content to help customers choose you. We
+            build websites and landing pages to make sure you're attracting the
+            right customers fit for your business.
+          </p>
         </div>
         {/* <swiper-container className="flex overflow-x-auto gap-8 lg:grid-cols-2"> */}
-        <div className={`w-full py-8 ${styles.boxShadow} relative`}>
-          <div className={`${styles.boxShadowLeft}`}></div>
-          <Splide
-            options={{
-              gap: "32px",
-              drag: true,
-              arrows: false,
-              trimSpace: false,
-              padding: "20%",
-              focus: "center",
-              start: 1,
-              fixedWidth: "80%",
-            }}
+      </div>
+      <div>
+        {features.map((feat) => (
+          <div
+            className="flex flex-col px-6 py-8 mx-auto gap-4 relative border-l-2 max-w-[75%]"
+            key={feat.title}
           >
-            {features.map((feat) => (
-              <SplideSlide key={feat.id}>
-                <div className="flex flex-col gap-4 w-full text-center">
-                  <h4 className="text-xl font-semibold">{feat.title}</h4>
-                  <p className="text-md text-[#8C929E]">{feat.content}</p>
-                </div>
-              </SplideSlide>
-            ))}
-          </Splide>
-        </div>
+            <IconCubes
+              className="absolute top-[-12px] left-[-12px] bg-black"
+              width="24px"
+            />
+            <div className=" flex flex-col justify-center">
+              <h3 className="text-2xl font-medium">{feat.tag}</h3>
+              <p className="text-lg">{feat.title}</p>
+            </div>
+            <p className="text-zinc-300">{feat.content}</p>
+          </div>
+        ))}
       </div>
     </section>
   );
