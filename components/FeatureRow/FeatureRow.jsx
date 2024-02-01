@@ -2,8 +2,8 @@ import Image from "next/image";
 
 const features = [
   {
-    heading: "Posting consistently isn't enough",
-    text: "Customers want to know why you're the best solution. How you're better than a competitor. We'll create content that shows exactly this so you're the first they think about if they have a problem",
+    heading: "Be the first customers think of",
+    text: "Customers want to know why you're the best solution. How you're better than a competitor. Our content positions you as the go-to solution",
   },
   {
     heading: "Turn your followers into customers",

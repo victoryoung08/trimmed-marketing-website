@@ -46,7 +46,7 @@ h2 {
 }
 
 .btn {
-  @apply w-full bg-primary text-textDark py-4 px-4 rounded-xl font-semibold text-xl tracking-tight;
+  @apply w-full bg-primary text-textDark py-4 px-4 rounded-xl font-medium tracking-tight;
 }
 
 .text-link {

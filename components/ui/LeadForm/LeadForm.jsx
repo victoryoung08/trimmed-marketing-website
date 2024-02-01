@@ -60,7 +60,7 @@ export default function LeadForm() {
     </div>
   ));
   return (
-    <div className="max-w-[80%] mx-auto flex flex-col gap-12">
+    <div className="max-w-[80%] mx-auto flex flex-col gap-12 md:max-w-[450px] pb-12">
       <div>
         <h2 className="text-center">Book in a call with us</h2>
         <p className="text-center">

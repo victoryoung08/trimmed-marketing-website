@@ -3,7 +3,7 @@ export default function page() {
   return (
     <main>
       <section className="flex flex-col gap-8 mb-24">
-        <img src="" alt="" className="w-full h-[200px] bg-white" />
+        {/* <img src="" alt="" className="w-full h-[200px] bg-white" /> */}
         <h1>
           Get more customers you love to work with - without being stuck in
           Editing Apps and Youtube Tutorials
@@ -17,17 +17,17 @@ export default function page() {
         <button>Book a Free Call</button>
       </section>
       <section className="flex flex-col gap-4 py-12">
-        <img src="" alt="" className="w-full h-[200px] bg-white" />
-        <h3 className="text-3xl">It's not all just about posting content</h3>
+        {/* <img src="" alt="" className="w-full h-[200px] bg-white" /> */}
+        <h3 className="text-3xl">It&apos;s not all just about posting content</h3>
         <p>
           Use social to find new audiences. Develop a landing page to convert
-          them into customers. Craft an amazing offer your customers can’t say
+          them into customers. Craft an amazing offer your customers can&apos;t say
           no to. We do all this for you so you can work on your business - not
           in it.
         </p>
       </section>
       <section className="flex flex-col gap-4 py-12">
-        <img src="" alt="" className="w-full h-[200px] bg-white" />
+        {/* <img src="" alt="" className="w-full h-[200px] bg-white" /> */}
         <h3 className="text-3xl">
           Build a brand and convert followers into customer
         </h3>
@@ -37,7 +37,7 @@ export default function page() {
         </p>
       </section>
       <section className="flex flex-col gap-4 py-12">
-        <img src="" alt="" className="w-full h-[200px] bg-white" />
+        {/* <img src="" alt="" className="w-full h-[200px] bg-white" /> */}
         <h3 className="text-3xl">
           Attract the right customers to your business
         </h3>
@@ -48,7 +48,7 @@ export default function page() {
         </p>
       </section>
       <section className="py-12">
-        <h3>Here's how we'll get you more leads in 8 weeks</h3>
+        <h3>Here&apos;s how we&apos;ll get you more leads in 8 weeks</h3>
         {/* Component */}
       </section>
     </main>

@@ -57,7 +57,7 @@ export default function Features() {
           </h2>
           <p>
             We create social media content to help customers choose you. We
-            build websites and landing pages to make sure you're attracting the
+            build websites and landing pages to make sure you&apos;re attracting the
             right customers fit for your business.
           </p>
         </div>
