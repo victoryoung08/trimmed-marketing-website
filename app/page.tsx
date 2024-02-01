@@ -6,9 +6,6 @@ import VideoGrid from "@/components/VideoGrid/VideoGrid";
 import CTAButton from "@/components/ui/CTAButton/CTAButton";
 import LeadForm from "@/components/ui/LeadForm/LeadForm";
 import Logos from "@/components/Logos/Logos";
-import HandDrawnCircle from "@/components/HandDrawnCircle/HandDrawnCircle";
-import SubCTA from "@/components/SubCTA/SubCTA";
-import { Card, CardHeader, CardBody, CardFooter } from "@nextui-org/react";
 import FeatureRow from "@/components/FeatureRow/FeatureRow";
 import CaseStudySection from "@/components/CaseStudySection/CaseStudySection";
 
@@ -39,7 +36,6 @@ export default async function Home() {
       <Features />
       <VideoGrid />
       <FeatureRow />
-      {/* <SubCTA /> */}
       <CaseStudySection />
       <Packages />
       <LeadForm />
