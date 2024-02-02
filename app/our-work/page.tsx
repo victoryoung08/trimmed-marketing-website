@@ -6,10 +6,14 @@ import { getCaseStudies, getCaseStudiesId } from "@/utils/contentful";
 const CaseStudiesCard = async () => {
   // get all entries from cms
   const { items } = await getCaseStudies();
-  const caseStudyData = items.filter((i: any) => i.fields.title !== "logos");
-  return caseStudyData.map((cs: any) => (
-    <CaseStudyCard key={cs.name} data={cs} />
-  ));
+  if (items) {
+    const caseStudyData = items.filter((i: any) => i.fields.title !== "logos");
+    return caseStudyData.map((cs: any) => (
+      <CaseStudyCard key={cs.name} data={cs} />
+    ));
+  } else {
+    console.log("Items not available yet");
+  }
 };
 
 export default async function page() {
